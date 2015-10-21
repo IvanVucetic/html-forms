@@ -1,9 +1,6 @@
 body {
 	width: 100%;
 	margin: 0;
-	padding: 0; /*nije pomerilo na gore*/
-	vertical-align: baseline; /*nije pomerilo na gore*/
-	border: 0 none; /*nije pomerilo na gore*/
 }
 
 #background-gradient {
@@ -36,6 +33,17 @@ body {
 
 }
 
-p {
-	margin: 0 auto;
+#authHeader {
+	background-color: #63b8ff;
+	height: 96px;
+	margin-bottom: 15px; /*ovo izbrisati i prebaciti na logo-tabs*/
 }
+
+#authContent {
+	background-color: #4682b4;
+	height: 749px;
+}
+
+/*p {
+	margin: 0 auto;
+}*/
