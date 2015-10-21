@@ -45,6 +45,7 @@ body {
 	/*height: 56px; izbrisati posle jer je logo te visine*/
 	padding-top: 40px;
 	margin-bottom: 15px; /*prebaceno iz authHeader ali nestala margina; moguce zbog 'collapsing margins' pojave*/
+	position: relative; /*mora da bi tabs bili pos:abs u odn na ovo;*/
 }
 
 #logo {
@@ -68,6 +69,14 @@ body {
 
 #tabs {
 	background-color: #cd919e;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#tabs li:nth-child(1) {
+	border: 0 none;
 }
 
 #authContent {
@@ -84,3 +93,14 @@ a {
 	color: #45cae6;
 	cursor: pointer;
 }
+
+ul {
+	list-style: outside none none;
+}
+
+li {
+	display: inline;
+	padding: 5px 10px;
+	border-left: 1px solid #d3d3d3;
+}
+
