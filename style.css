@@ -36,14 +36,51 @@ body {
 #authHeader {
 	background-color: #63b8ff;
 	height: 96px;
-	margin-bottom: 15px; /*ovo izbrisati i prebaciti na logo-tabs*/
+	margin-bottom: 15px; /*trebalo bi da stoji u logs-n-tabs*/ 
+
+}
+
+#logo-and-tabs {
+	background-color: #ffc0cb;
+	/*height: 56px; izbrisati posle jer je logo te visine*/
+	padding-top: 40px;
+	margin-bottom: 15px; /*prebaceno iz authHeader ali nestala margina; moguce zbog 'collapsing margins' pojave*/
+}
+
+#logo {
+	background-image: url("https://images.mint.com/web-client/images/mint-logo.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+	position: relative;
+	top: 12px;
+	height: 56px;
+	width: 89px;
+}
+
+#logo-link {
+	display: block;
+	float: left;
+	height: 81px;
+	width: 194px;
+	text-decoration: none;
+}
+
+#tabs {
+	background-color: #cd919e;
 }
 
 #authContent {
 	background-color: #4682b4;
 	height: 749px;
+	padding: 43px 50px 50px 50px;
 }
 
 /*p {
 	margin: 0 auto;
 }*/
+
+a {
+	color: #45cae6;
+	cursor: pointer;
+}
