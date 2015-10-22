@@ -123,10 +123,13 @@ h2 {
 }
 
 #signupBody {
-	background-color: #87cefa;
-	height: 656px;
-	width: 590px;
+	background-color: #87cefa; /*treba #fff; */
+	height: 656px; /* ukloni kad uneses elemente */
+	width: 590px; /* ukloni kad uneses elemente */
 	padding: 43px 50px 50px 50px;
+	min-height: 330px;
+	display: block;
+	position: relative;
 }
 
 a {
