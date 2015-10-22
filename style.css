@@ -115,6 +115,7 @@ h2 {
 }
 
 #authContent {
+	box-shadow: 1px 3px 8px rgba(0,0,0,0.2);
 	background-color: #4682b4; /*treba #fff; */
 	height: 749px; /*promeni u 100% kad popunis, ovako se razvuce*/
 	min-height: 330px;
