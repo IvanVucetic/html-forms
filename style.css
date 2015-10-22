@@ -1,6 +1,20 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, var {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;			/*proveri zasto ovo funkcionise, probaj
+  							individualne elemente (ul, li - inherit)*/
+}
+
 body {
 	width: 100%;
 	margin: 0;
+	/*font-family: "AvenirNext-Regular","Helvetica Neue", 
+				  Helvetica,Arial,sans-serif; /*this enabled all fonts to be
+				  								rendered like this, except if
+				  								stated otherwise.*/
 }
 
 #background-gradient {
@@ -41,7 +55,7 @@ body {
 }
 
 #logo-and-tabs {
-	background-color: #ffc0cb;
+	/*background-color: #ffc0cb; za raspoznavanje*/
 	/*height: 56px; izbrisati posle jer je logo te visine*/
 	padding-top: 40px;
 	margin-bottom: 15px; /*prebaceno iz authHeader ali nestala margina; moguce zbog 'collapsing margins' pojave*/
@@ -67,40 +81,69 @@ body {
 	text-decoration: none;
 }
 
-#tabs {
-	background-color: #cd919e;
+#tabs {		/* !!!remains to be seen why the wrong height!!!!*/
+	/*background-color: #cd919e; za raspoznavanje */
 	display: inline-block;
 	position: absolute;
 	bottom: 0;
 	right: 0;
 }
 
+h2 {
+	font-family: "AvenirNext-Regular","Helvetica Neue", 
+				  Helvetica,Arial,sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
 #tabs li:nth-child(1) {
 	border: 0 none;
 }
 
-#authContent {
-	background-color: #4682b4;
-	height: 749px;
-	padding: 43px 50px 50px 50px;
+#tabs a {
+	color: #333;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: normal;
 }
 
-/*p {
-	margin: 0 auto;
-}*/
+#tabs a.selected {
+	color: #333;
+	font-family: "AvenirNext-DemiBold","Helvetica Neue",
+				  Helvetica,Arial,sans-serif;
+	font-weight: bold;
+}
+
+#authContent {
+	background-color: #4682b4; /*treba #fff; */
+	height: 749px; /*promeni u 100% kad popunis, ovako se razvuce*/
+	min-height: 330px;
+
+}
+
+#signupBody {
+	background-color: #87cefa;
+	height: 656px;
+	width: 590px;
+	padding: 43px 50px 50px 50px;
+}
 
 a {
 	color: #45cae6;
 	cursor: pointer;
+	height: 19px;
 }
 
 ul {
 	list-style: outside none none;
+	margin: 0;
+	padding: 0;
 }
 
 li {
 	display: inline;
 	padding: 5px 10px;
 	border-left: 1px solid #d3d3d3;
+	font-size: 15px;
 }
 
