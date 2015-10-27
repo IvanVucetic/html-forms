@@ -24,6 +24,7 @@ body {
 				  								rendered like this, except if
 				  								stated otherwise.*/
 	color: #333;
+	font-size: 13px;
 }
 
 #background-gradient {
@@ -341,10 +342,56 @@ ol li.error {
 	text-decoration: underline;
 }
 
+/*Footer part*/
+.mainFooterView {
+	background: transparent none repeat scroll 0 0;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	padding: 20px 0 100px;
+	margin-top: 20px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+#body-footer {
+	width: 1000px;
+	margin: 0 auto; /*returns it to center*/
+}
+
+.secondary-links a {
+	color: #a5a5a5;
+	padding: 0px 2%;
+	position: relative;
+}
+
+.secondary-links a::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 1px;
+	margin-top: -5px;
+	border-right: 1px solid #ccc;
+	height: 10px;
+	width: 1px;
+}
+
+.security-links {
+	margin: 25px 0px;
+}
+
+.copyright {
+	color: #a5a5a5;
+	font-size: 11px;
+
+}
+
+/*General part*/
 a {
 	color: #45cae6;
 	cursor: pointer;
 	height: 19px;
+	text-decoration: none;
 }
 
 ol, ul {
@@ -363,4 +410,8 @@ li {
 input {
 	font-size: 12px;
 	margin: 0;
+}
+
+p {
+	line-height: 1.4em;
 }
