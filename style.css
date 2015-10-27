@@ -376,6 +376,10 @@ ol li.error {
 	width: 1px;
 }
 
+.secondary-links a:last-child::after {
+	display: none;
+}
+
 .security-links {
 	margin: 25px 0px;
 }
