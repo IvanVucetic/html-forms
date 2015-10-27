@@ -57,10 +57,40 @@
                     </select>
                     <div class="errorMessage"></div>
                   </li>
-                  <li class="zipcode"></li>
-                  <li class="password"></li>
-                  <li class="password2"></li>
-                  <li class="termsCheckbox"></li>
+                  <li class="zipcode">
+                    <label id="zipCodeLabel" for="form-signup-zipcode">
+                      Zip Code</label>
+                    <input id="form-signup-zipcode" type="text" maxlength="5"
+                    name="zipcode"></input>
+                    <div class="errorMessage"></div>
+                  </li>
+                  <li class="password">
+                    <label for="form-signup-password">Password</label>
+                    <div class="inputWrapper">
+                      <input id="form-signup-password" type="password" value=""
+                      maxlength="32" autocomplete="off" name="password">
+                    </div>
+                    <div class="errorMessage"></div>
+                  </li>
+                  <li class="password2">
+                    <label for="form-signup-password-confirm">
+                    Confirm Password</label>
+                    <input id="form-signup-password-confirm" type="password"
+                    value="" maxlength="32"autocomplete="off" name="password2">
+                    </input>
+                    <div class="errorMessage"></div>
+                  </li>
+                  <li class="termsCheckbox">
+                    <input id="form-signup-terms" type="checkbox" name="terms"
+                    value=""></input>
+                    <label id="terms-label" for="form-signup-terms">
+                    Yes, I agree to the Mint</label>
+                    <a target="_blank" 
+                    href="https://www.mint.com/how-it-works/security/terms/">
+                    Terms of Use</a>
+                    .
+                    <div class="errorMessage"></div>
+                  </li>
                 </ol>
                 <div id="buttonSpinnerContainer">
                   <input class="signup-submit" type="submit" value="signup"></input>
