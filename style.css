@@ -158,13 +158,18 @@ h1, h2 {
 	height: 579px; /*ukloni kad uneses elemente*/
 }
 
+ol li {
+	margin: 0;
+	padding: 0;
+	display: list-item;
+}
+
+
 ol li.error {
 	background: transparent 
 				url("https://images.mint.com/web-client/images/icons/form-ajax-iam.png") 
 				no-repeat scroll 270px 29px;
-	margin: 0;
-	padding: 0;
-	display: list-item;
+
 }
 
 .left-column label {
@@ -203,6 +208,11 @@ ol li.error {
 	min-height: 20px;
 	visibility: visible; /*ili hidden*/
 	font-size: 13px;
+}
+
+.left-column select {
+	width: 270px;
+	height: 30px;
 }
 
 #buttonSpinnerContainer{

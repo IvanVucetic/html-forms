@@ -9,67 +9,82 @@
   <div id="background-gradient">
     <div id="wrapper">
       <div id="pageBody">
-         <div id="authHeader">
-           <div id="logo-and-tabs">
-             <div id="logo">
-               <a id="logo-link" href="https://www.mint.com"></a>
-             </div>
-             <div id="tabs">
-               <h2>
-                 <ul>
-                   <li id="signup">
-                     <a class="selected" id="signupButton" href="javascript:">Sign up</a>
-                   </li>
-                   <li id="login">
-                     <a id="signinButton" href="javascript:">Log in</a>
-                   </li>
-                 </ul>
-               </h2>
-             </div>
-           </div>
-         </div>
-         <div id="authContent">
-           <div id="signupBody">
-             <h1>Create a new account</h1>
-             <div class="left-column">
-               <form id="form-signup" action="" method="post"> <!-- popuniti i stilizovati! -->
-                 <ol>
-                   <li class="email error">
+        <div id="authHeader">
+          <div id="logo-and-tabs">
+            <div id="logo">
+              <a id="logo-link" href="https://www.mint.com"></a>
+            </div>
+            <div id="tabs">
+              <h2>
+                <ul>
+                  <li id="signup">
+                    <a class="selected" id="signupButton" href="javascript:">Sign up</a>
+                  </li>
+                  <li id="login">
+                    <a id="signinButton" href="javascript:">Log in</a>
+                  </li>
+                </ul>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div id="authContent">
+          <div id="signupBody">
+            <h1>Create a new account</h1>
+            <div class="left-column">
+              <form id="form-signup" action="" method="post"> <!-- popuniti i stilizovati! -->
+                <ol>
+                  <li class="email error">
                      <label for="form-signup-username">Your Email</label>
                      <input id="form-signup-username" type="text" value="" 
                       maxlength="255" name="email"></input>
                      <div class="errorMessage">Please enter your email address.</div>
-                   </li>
-                   <li class="email2"></li>
-                   <li><label for="form-signup-country">Country</label></li> <!-- videti sta je ovaj for --> 
-                   <li class="zipcode"></li>
-                   <li class="password"></li>
-                   <li class="password2"></li>
-                   <li class="termsCheckbox"></li>
-                 </ol>
-                 <div id="buttonSpinnerContainer">
-                   <input class="signup-submit" type="submit" value="signup"></input>
-                   <div class="spinner" style="visibility: visible"></div> <!-- promeni u hidden na kraju -->
-                 </div> <!-- spinner visibility da bi se videlo sta je -->
-               </form>
-             </div>
-             <div class="right-column">
-               <div id="security-copy"> <!-- keeping the original name for easier navigation -->
-                 <h2>Why you'll love it</h2>
-                 <ul>
-                   <li>See all your accounts in one place</li>
-                   <li>Set your budget and pay down your debt</li>
-                   <li>Find the best ways to grow your money</li>
-                   <li>
-                     Stay
-                     <a id="signup-privacy" href="http://www.mint.com/privacy">
-                     safe and secure</a>
-                   </li>
-                 </ul>
-               </div>
-             </div> 
-           </div>  
-         </div>
+                  </li>
+                  <li class="email2">
+                    <label for="form-signup-username-confirm">Confirm Email</label>
+                    <input id="form-signup-username-confirm" type="text"
+                    value="" maxlength="255" name="email2"></input>
+                    <div class="errorMessage"></div>
+                  </li>
+                  <li>
+                    <label for="form-signup-country">Country</label>
+                    <select id="form-signup-country" name="country">
+                      <optgroup class="available-countries">
+                        ::before
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                      </optgroup>
+                    </select>
+                    <div class="errorMessage"></div>
+                  </li>
+                  <li class="zipcode"></li>
+                  <li class="password"></li>
+                  <li class="password2"></li>
+                  <li class="termsCheckbox"></li>
+                </ol>
+                <div id="buttonSpinnerContainer">
+                  <input class="signup-submit" type="submit" value="signup"></input>
+                  <div class="spinner" style="visibility: visible"></div> <!-- promeni u hidden na kraju -->
+                </div> <!-- spinner visibility da bi se videlo sta je -->
+              </form>
+            </div>
+            <div class="right-column">
+              <div id="security-copy"> <!-- keeping the original name for easier navigation -->
+                <h2>Why you'll love it</h2>
+                <ul>
+                  <li>See all your accounts in one place</li>
+                  <li>Set your budget and pay down your debt</li>
+                  <li>Find the best ways to grow your money</li>
+                  <li>
+                    Stay
+                    <a id="signup-privacy" href="http://www.mint.com/privacy">
+                    safe and secure</a>
+                  </li>
+                </ul>
+              </div>
+            </div> 
+          </div>  
+        </div>
       </div>        
     </div>
   </div>
