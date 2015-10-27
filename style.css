@@ -275,6 +275,17 @@ ol li.error {
 	background-color: #3eb6cf;
 }
 
+#buttonSpinnerContainer .spinner {
+	width: 24px;
+	height: 24px;
+	background: transparent	url("spinner20px.gif") no-repeat scroll 0 0;
+	display: inline-block;
+	position: relative;
+	top: 12px;
+	opacity: 0.5;
+	margin-left: 5px;
+}
+
 .right-column {
 	display: inline-block;
 	color: #ccc;
