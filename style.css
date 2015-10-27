@@ -247,6 +247,33 @@ ol li.error {
 	height: 39px; /*izbrisati kad sredis decu*/
 }
 
+.btn {
+	display: inline-block;
+	border: medium none;
+	line-height: 13px;
+	box-sizing: border-box;
+	border-radius: 3px;
+	text-transform: uppercase;
+	white-space: nowrap;
+	text-align: center;
+	padding: 13px 20px 11px;
+	font-size: 13px;
+	text-decoration: none !important;
+	margin: 0;
+	max-width: 85px;
+	transition-property: all;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-out;
+	transition-delay: 0s;
+	color: #fff;
+	background: #45cae6 none repeat scroll 0% 0%;
+}
+
+.btn:hover, .btn:focus {
+	cursor: pointer;
+	outline: medium none;
+	background-color: #3eb6cf;
+}
 
 .right-column {
 	display: inline-block;
