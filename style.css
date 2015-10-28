@@ -32,13 +32,11 @@ body {
 	top: 0;
 	width: 100%;
 	height: 860px;
-	background-color: #dcdcdc;
 }
 
 #wrapper {
 	width: 1000px;
 	height: 860px;
-	background-color: #c0c0c0;
 	position: relative;
 	margin: 0 auto;
 	/*position: absolute;
@@ -51,14 +49,12 @@ body {
 #pageBody {
 	width: 690px;
 	height: 860px;
-	background-color: #a9a9a9;
 	margin: 0 auto; 
 	position: relative;
 
 }
 
 #authHeader {
-	background-color: #63b8ff;
 	height: 96px;
 	margin-bottom: 15px; /*trebalo bi da stoji u logs-n-tabs*/ 
 
@@ -126,16 +122,14 @@ h1, h2 {
 
 #authContent {
 	box-shadow: 1px 3px 8px rgba(0,0,0,0.2);
-	background-color: #4682b4; /*treba #fff; */
-	height: 749px; /*promeni u 100% kad popunis, ovako se razvuce*/
+	background-color: #fff; /*treba #fff; */
+	height: 749px; /*should be 100% but doesn't work*/
 	min-height: 330px;
 
 }
 
 #signupBody {
-	background-color: #87cefa; /*treba #fff; */
-	height: 656px; /* ukloni kad uneses elemente */
-	width: 590px; /* ukloni kad uneses elemente */
+	background-color: #fff; /*treba #fff; */
 	padding: 43px 50px 50px 50px;
 	min-height: 330px;
 	display: block;
@@ -155,8 +149,6 @@ h1, h2 {
 .left-column {
 	display: inline-block;
 	width: 350px;
-	background-color: #daa520; /*izbaci na kraju*/
-	height: 579px; /*ukloni kad uneses elemente*/
 }
 
 ol li {
@@ -245,7 +237,6 @@ ol li.error {
 
 #buttonSpinnerContainer{
 	margin-top: 20px;
-	height: 39px; /*izbrisati kad sredis decu*/
 }
 
 .btn {
